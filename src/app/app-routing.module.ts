@@ -3,12 +3,12 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   {
-    path: 'home',
-    loadChildren: () => import('./pages/home/home-routing.module').then( m => m.HomePageRoutingModule)
+    path: 'product-detail',
+    loadChildren: () => import('./pages/product-detail/product-detail.module').then( m => m.ProductDetailPageModule)
   },
   {
     path: '',
-    redirectTo: 'home',
+    redirectTo: 'product-detail',
     pathMatch: 'full'
   },
   {
@@ -38,7 +38,7 @@ const routes: Routes = [
   {
     path: 'search-result',
     loadChildren: () => import('./pages/search-result/search-result.module').then( m => m.SearchResultPageModule)
-  },
+  }
 ];
 
 @NgModule({
