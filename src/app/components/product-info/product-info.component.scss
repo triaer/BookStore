@@ -1,0 +1,34 @@
+label {
+    display: inline-block;
+    width: 100%;
+}
+
+mat-card {
+    width: 100%;
+    height: 100%;
+}
+
+mat-card-actions {
+    bottom: 5%;
+    width: 100%;
+    height: 10%;
+    margin-top: 4%;
+    display: inline-block;
+    position: absolute;
+}
+
+button {
+    height: 100%;
+}
+
+.cart-button {
+    position: absolute;
+    width: 26%;
+    left: 2%;
+}
+
+.pay-button {
+    position: absolute;
+    width: 64%;
+    right: 2%;
+}

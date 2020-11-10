@@ -1,26 +1,20 @@
-ion-row {
-    width: 100%;
-}
-
-.top-row {
-    height: 80%;
-    border: 1px solid black;
-}
-
-.bottom-row {
-    margin-top: 2%;
-    height: 18%;
-    border: 1px solid blue;
-}
-
-ion-grid {
+mat-card {
     width: 100%;
     height: 100%;
 }
 
 img {
-    display: inline-flex;
+    display: inline-block;
     position: relative;
     width: 100%;
     height: 100%;
+    object-fit: fill;
+}
+
+.mat-card-img-slideshow {
+    height: 70%;
+}
+
+.mat-card-imgs {
+    height: 30%;
 }
