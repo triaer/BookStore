@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, Output } from '@angular/core';
+import { MenuController } from '@ionic/angular';
 
 @Component({
   selector: 'app-side-menu',
@@ -7,8 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SideMenuComponent implements OnInit {
 
-  constructor() { }
+  constructor( public menuController: MenuController ) { 
+
+  }
 
   ngOnInit() {}
 
+  openFirst() {
+    this.menuController.enable(true, 'first');
+    this.menuController.open('first');
+    
+  }
 }

@@ -1,11 +1,10 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>product-detail</ion-title>
-  </ion-toolbar>
+  <app-header-bar (sideMenu)="toggleSideMenu()"></app-header-bar>
 </ion-header>
 
-<ion-content>
+<ion-content color="dark">
   <ion-infinite-scroll style="width: 100%; height: 100%;">
+    <app-side-menu></app-side-menu>
     <ion-grid>
       <ion-row class="basic-info-row">
         <ion-col size="12" size-md="5" size-sm="12">

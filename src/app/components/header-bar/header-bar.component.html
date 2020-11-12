@@ -1,0 +1,20 @@
+<ion-toolbar color="dark">
+  <ion-buttons slot="start" class="left-buttons">
+    <button slot="start" mat-flat-button (click)="emit('sideMenu')">
+      <ion-icon slot="icon-only" name="menu" color="primary"></ion-icon>
+    </button>
+    <button slot="end" mat-flat-button>
+      <ion-icon slot="icon-only" name="home" color="primary"></ion-icon>
+    </button>
+  </ion-buttons>
+  <ion-searchbar slot="end" placeholder="Search your book"></ion-searchbar>
+  <ion-buttons slot="end" class="right-buttons">
+    <button slot="start" mat-flat-button>
+      <ion-icon slot="icon-only" name="person-circle" color="primary"></ion-icon>
+    </button>
+
+    <button slot="end" mat-flat-button>
+      <ion-icon slot="icon-only" name="cart-outline" color="primary"></ion-icon>
+    </button>
+  </ion-buttons>
+</ion-toolbar>

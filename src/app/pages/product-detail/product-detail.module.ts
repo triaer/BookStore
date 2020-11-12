@@ -11,6 +11,8 @@ import { ImageSlideshowComponent } from '../../components/image-slideshow/image-
 import { ProductInfoComponent } from '../../components/product-info/product-info.component'
 import { MaterialModule } from '../../material-module'
 import { ProductCommentComponent } from '../../components/product-comment/product-comment.component'
+import { HeaderBarComponent } from '../../components/header-bar/header-bar.component'
+import { SideMenuComponent } from '../../components/side-menu/side-menu.component'
 @NgModule({
   imports: [
     CommonModule,
@@ -23,7 +25,9 @@ import { ProductCommentComponent } from '../../components/product-comment/produc
     ProductDetailPage,
     ImageSlideshowComponent,
     ProductInfoComponent,
-    ProductCommentComponent
+    ProductCommentComponent,
+    HeaderBarComponent,
+    SideMenuComponent
   ]
 })
 export class ProductDetailPageModule { }
