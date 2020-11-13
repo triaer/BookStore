@@ -1,4 +1,5 @@
 import { Component, EventEmitter, OnInit, Output } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-header-bar',
@@ -7,11 +8,19 @@ import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 })
 export class HeaderBarComponent implements OnInit {
   @Output() sideMenu = new EventEmitter();
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {}
   
   emit(eventName) {
     this[eventName].emit();
+  }
+
+  goHome() {
+    this.router.navigateByUrl('/home');
+  }
+
+  goPersonalInfo() {
+    this.router.navigateByUrl('');
   }
 }

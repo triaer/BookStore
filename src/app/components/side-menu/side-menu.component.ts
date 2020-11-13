@@ -7,16 +7,14 @@ import { MenuController } from '@ionic/angular';
   styleUrls: ['./side-menu.component.scss'],
 })
 export class SideMenuComponent implements OnInit {
-
-  constructor( public menuController: MenuController ) { 
-
+  
+  constructor(private menuController: MenuController) {
+    
   }
 
-  ngOnInit() {}
+  ngOnInit() { }
 
   openFirst() {
-    this.menuController.enable(true, 'first');
-    this.menuController.open('first');
-    
+    this.menuController.toggle("first");
   }
 }
